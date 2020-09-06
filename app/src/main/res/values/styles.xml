@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Form" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorFront</item>
+    </style>
+    <style name="AppThemeLogin" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="strokeWidth">4dp</item>
+        <item name="strokeColor">#11CBD7</item>
+    </style>
+</resources>

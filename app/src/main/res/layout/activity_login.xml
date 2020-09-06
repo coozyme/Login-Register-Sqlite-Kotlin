@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingHorizontal="20dp"
+    android:background="@color/colorFront"
+    android:id="@+id/nestedScrollViewForlog">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="213dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="99dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_login" />
+
+    <EditText
+        android:id="@+id/edt_emailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:textColorHint="@color/colorYellow"
+        android:textColor="@color/colorYellow"
+        android:paddingStart="10dp"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/edt_passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:paddingStart="10dp"
+        android:textColor="@color/colorYellow"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:hint="Password"
+        android:textColorHint="@color/colorYellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_emailLogin" />
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="26dp"
+        android:background="@color/colorYellow"
+        android:text="Login"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_passwordLogin" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="19dp"
+        android:background="@color/colorTransaprent"
+        android:text="Register"
+        android:textColor="@color/colorYellow"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_passwordLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
