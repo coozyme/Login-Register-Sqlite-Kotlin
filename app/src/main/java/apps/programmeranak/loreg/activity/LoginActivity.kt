@@ -28,18 +28,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener  {
     private lateinit var inputValidation: InputValidation
     private lateinit var databaseHelper: DatabaseHelper
 
-//
-//    private val activity = this@LoginActivity
-//    private lateinit var nestedScrollView: NestedScrollView
-//    private lateinit var textInputLayoutEmail: TextInputLayout
-//    private lateinit var textInputLayoutPassword: TextInputLayout
-//    private lateinit var textInputEditTextEmail: TextInputEditText
-//    private lateinit var textInputEditTextPassword: TextInputEditText
-//    private lateinit var appCompatButtonLogin: AppCompatButton
-//    private lateinit var textViewLinkRegister: AppCompatTextView
-//    private lateinit var inputValidation: InputValidation
-//    private lateinit var databaseHelper: DatabaseHelper
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -52,20 +40,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener  {
 //
 //        // initializing the objects
         initObjects()
-
-
-
-
-//        btn_register.setOnClickListener {
-//            val intent = Intent(this, RegisterActivity::class.java)
-//            startActivity(intent)
-//        }
-//
-//        btn_login.setOnClickListener {
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//
-//        }
 
     }
 
@@ -98,21 +72,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener  {
         databaseHelper = DatabaseHelper(this)
         inputValidation = InputValidation(this)
     }
-//
-//    override fun onClick(v: View?) {
-////        when (v?.id){
-////            R.id.btn_login-> verifyFromSQLite()
-////            R.id.btn_register -> {
-////                // Navigate to RegisterActivity
-////                val intentRegister = Intent(applicationContext, RegisterActivity::class.java)
-////                startActivity(intentRegister)
-////            }
-////        }
-//    }
-///**
-// * This method is to validate the input text fields and verify login credentials from SQLite
-// */
-//
+
 private fun verifyFromSQLite() {
     if (!inputValidation!!.isInputEditTextFilled(Email!!, "Enter Valid Email")) {
         return
@@ -134,11 +94,10 @@ private fun verifyFromSQLite() {
             .show()
     }
 }
-//
-//    /**
-//     * This method is to empty all input edit text
-//     */
-//}
+
+    /**
+     * This method is to empty all input edit text
+     */
     private fun emptyInputEditText() {
         Email!!.text = null
         password!!.text = null

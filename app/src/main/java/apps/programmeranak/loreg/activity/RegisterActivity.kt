@@ -51,7 +51,6 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener{
 
 
 
-
     /**
      * This method is to initialize views
      */
